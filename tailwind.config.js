@@ -12,6 +12,7 @@ module.exports = {
       // },
       fontFamily:{
         "overpass": ["Overpass",'sans-serif'],
+        "montserrat": ["Montserrat",'sans-serif'],
       },
       // colors:{
       //   "button-color": "#FD6363",
