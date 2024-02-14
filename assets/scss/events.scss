@@ -1,0 +1,60 @@
+@import "./color";
+
+
+$card-border-width:1px;
+$card-border-color:black;
+.card{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    .card__img{
+        border: $card-border-width solid $card-border-color;
+        padding: 2rem 1.5rem;
+        flex-grow: 1;
+        flex-shrink: 0;
+        img{
+            // aspect-ratio: 12/4;
+            height: 15rem;
+            width: auto;
+        }
+    }
+    .card__info{
+        flex-shrink: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: $card-border-width solid $card-border-color;
+        border-left: 0;
+        padding: 2rem;
+        // background-color: $main-color-dark;
+        &__text{
+        }
+        &__bnt{
+            display: flex;
+            gap: 0.5rem 1rem;
+            align-self: flex-start;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 742px) {
+    .card {
+        flex-direction: column;
+        .card__img{
+            img{
+               margin: 0 auto;
+            }
+        }
+        .card__info{
+            border-top: 0;
+            border-left: $card-border-width solid $card-border-color;
+            &__text{
+            }
+            &__bnt{
+                flex-wrap: wrap;
+            }
+        }
+    }
+  }

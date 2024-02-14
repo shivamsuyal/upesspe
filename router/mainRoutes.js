@@ -9,9 +9,9 @@ mainRouter.get("/",(req,res)=>{
     res.render("pages/home")
 })
 
-// mainRouter.get("/projects",(req,res)=>{
-//     res.render("pages/projects")
-// })
+mainRouter.get("/events",(req,res)=>{
+    res.render("pages/events")
+})
 
 // mainRouter.get("/contact",(req,res)=>{
 //     res.render("pages/contact")
