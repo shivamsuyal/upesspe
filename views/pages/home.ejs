@@ -1,26 +1,99 @@
 <!DOCTYPE html>
 <html lang="en" class="hide-scrollbar">
+
 <head>
     <%- include('../partials/header'); %>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/lib/splide.css">
+    <!-- JS -->
+    <script src="/assets/js/lib/splide.js" defer></script>
+    <script src="/assets/js/home.js" defer></script>
 </head>
+
 <body>
     <%- include('../partials/navbar'); %>
     <div id="scroller__body" class="h-[100svh] w-full overflow-y-auto overflow-x-hidden hide-scrollbar">
         <section id="page1" class="relative h-[100svh] -z-10 flex items-center">
             <img class="absolute inset-0 h-full w-full object-cover -z-10" src="/assets/images/mainBg.png">
-            <div class="w-full pt-[6.5rem] font-montserrat flex flex-col gap-y-9 ml-4 justify-center items-center text-white">
+            <div
+                class="w-full pt-[6.5rem] font-montserrat flex flex-col gap-y-9 justify-center items-center text-white">
                 <div class="flex flex-col justify-center items-center gap-0">
-                    <h1 class="font-bold" style="font-size: clamp(4rem,10vw + 1rem,9rem);line-height: clamp(4rem,10vw + 1rem,9rem)">UPES SPE</h1>
-                    <p class="font-extralight" style="font-size: clamp(0.5rem,1rem + 1vw,1.5rem);">STUDENT CHAPTER</p>
+                    <h1 class="font-bold"
+                        style="font-size: clamp(3.5rem,10vw + 1rem,9rem);line-height: clamp(3.5rem,10vw + 1rem,9rem)">
+                        UPES SPE</h1>
+                    <p class="font-extralight" style="font-size: clamp(0.5rem,0.5rem + 3vw,1.5rem);">STUDENT CHAPTER</p>
                 </div>
-                <p class="font-semibold text-2xl">OUR CHAPTER | OUR WORK | OUR LEGACY</p>
-                <div class="font-bold font-overpass flex gap-x-6 justify-center items-center mt-2">
+                <p class="font-semibold text-2xl text-center">OUR CHAPTER | OUR WORK | OUR LEGACY</p>
+                <div
+                    class="font-bold font-overpass flex gap-x-6 gap-y-3 flex-wrap justify-center items-center mt-2 mx-4">
                     <a href="#" class="border px-4 py-2 rounded">UPES SPE Fest</a>
                     <a href="#" class="px-4 py-2 rounded bg-white text-main-color-dark">Become A Member</a>
                 </div>
             </div>
         </section>
+        <section id="about" class="relative flex min-h-[50svh] items-stretch">
+            <img src="/assets/images/pattern-1.png" class="absolute top-0 left-0 -z-10" alt="">
+            <img src="/assets/images/pattern-2.png" class="absolute bottom-0 right-0 translate-y-1/2 -z-10" alt="">
+            <div class="w-1/2 flex justify-center items-center">
+                <img src="/assets/images/about.png" class="h-96 w-auto" alt="">
+            </div>
+            <div class="w-1/2 flex flex-col items-center gap-y-12 pt-16">
+                <h1 class="text-5xl font-bold text-main-color-light">ABOUT US</h1>
+                <div class="text-[#092E6E] flex-1 px-4 flex items-center" style="line-height: 31px; word-spacing: 1px;">
+                    <p>
+                        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or
+                    double click me to add your own content and make changes to the font. Feel free to drag and drop me
+                    anywhere you like on your page. I'm a great place for you to tell a story and let your users know a
+                    little more about you.
+                    <br><br>
+                    This is a great space to write a long text about your company and your services. You can use this
+                    space to go into a little more detail about your company. Talk about your team and what services you
+                    provide. Tell your visitors the story of how you came up with the idea for your business and what
+                    makes you different from your competitors. Make your company stand out and show your visitors who
+                    you are.
+                        I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or
+                    double click me to add your own content and make changes to the font. Feel free to drag and drop me
+                    anywhere you like on your page. I'm a great place for you to tell a story and let your users know a
+                    little more about you.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="relative mt-16">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <img src="/assets/images/demo-1.png" alt="">
+                          </li>
+                          <li class="splide__slide">
+                            <img src="/assets/images/demo-1.png" alt="">
+                          </li>
+                          <li class="splide__slide">
+                            <img src="/assets/images/demo-1.png" alt="">
+                          </li>
+                          <li class="splide__slide">
+                            <img src="/assets/images/demo-1.png" alt="">
+                          </li>
+                          <li class="splide__slide">
+                            <img src="/assets/images/demo-1.png" alt="">
+                          </li>
+                          <li class="splide__slide">
+                            <img src="/assets/images/demo-1.png" alt="">
+                          </li>
+                          <li class="splide__slide">
+                            <img src="/assets/images/demo-1.png" alt="">
+                          </li>
+                      </ul>
+                </div>
+              </section>
+              <a href="#" class="border border-black rounded font-overpass flex justify-center items-center px-4 py-2 w-fit gap-x-2 mx-auto mt-6">
+                Discover More
+                <img src="/assets/images/svg/arrow.svg" class="h-4 w-auto" alt="">                 
+              </a>
+        </section>
+        <%- include('../partials/footer'); %>
     </div>
-    <%- include('../partials/footer'); %>
 </body>
+
 </html>

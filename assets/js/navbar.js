@@ -31,7 +31,7 @@ document.querySelector("nav ul").addEventListener("mouseleave",()=>{
   document.documentElement.style.setProperty('--navBarLine-width', "0px");
 })
 
-document.querySelector(`ul a[href="${document.location.pathname}"]`).classList.add("activeNavBar")
+// document.querySelector(`ul a[href="${document.location.pathname}"]`).classList.add("activeNavBar")
 
 function toggelMenu() {
   menu.classList.toggle("openMenu")
