@@ -29,6 +29,10 @@ nav ul::after{
         pointer-events: all;
         opacity: 1;
         top: 0;
+        background-color: $main-color-light;
+        nav ul::after{
+            display: none;
+        }
     }
 }
 
