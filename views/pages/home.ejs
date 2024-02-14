@@ -5,6 +5,7 @@
     <%- include('../partials/header'); %>
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/lib/splide.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
     <!-- JS -->
     <script src="/assets/js/lib/splide.js" defer></script>
     <script src="/assets/js/home.js" defer></script>
@@ -31,14 +32,15 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="relative flex min-h-[50svh] items-stretch">
+        <section id="about" class="relative flex flex-col md-s:flex-row min-h-[50svh] items-stretch">
             <img src="/assets/images/pattern-1.png" class="absolute top-0 left-0 -z-10" alt="">
             <img src="/assets/images/pattern-2.png" class="absolute bottom-0 right-0 translate-y-1/2 -z-10" alt="">
-            <div class="w-1/2 flex justify-center items-center">
-                <img src="/assets/images/about.png" class="h-96 w-auto" alt="">
+            <h1 class="md-s:hidden text-5xl text-center mt-12 mb-10 font-bold text-main-color-light">ABOUT US</h1>
+            <div class="flex-1 basis-1/2 flex justify-center items-center">
+                <img src="/assets/images/about.png" class="h-72 md:h-80 lg:h-96 w-auto" alt="">
             </div>
-            <div class="w-1/2 flex flex-col items-center gap-y-12 pt-16">
-                <h1 class="text-5xl font-bold text-main-color-light">ABOUT US</h1>
+            <div class="flex-1 basis-1/2 flex flex-col items-center gap-y-12 pt-6 md-s:pt-16">
+                <h1 class="hidden text-5xl md-s:inline-block font-bold text-main-color-light">ABOUT US</h1>
                 <div class="text-[#092E6E] flex-1 px-4 flex items-center" style="line-height: 31px; word-spacing: 1px;">
                     <p>
                         I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or

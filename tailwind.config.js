@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       screens:{
+        'md-s': '770px',
         'md': '900px',
-        'sm-l':'425px',
+        'sm-l':'445px',
         'sm-m':'375px',
         'sm-s':'320px',
-        'md-m':'1208px'
       },
       fontFamily:{
         "overpass": ["Overpass",'sans-serif'],
