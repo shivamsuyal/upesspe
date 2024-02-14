@@ -1,0 +1,22 @@
+{
+  "name": "upesspe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "tsc": "tailwindcss",
+    "live": "livereload",
+    "tsw": "tailwindcss -i assets/css/tailwind.css -o assets/css/style.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "tailwindcss-3d": "^1.0.5"
+  }
+}
