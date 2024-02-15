@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="hide-scrollbar">
+
+<head>
+    <%- include('../partials/header'); %>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="/assets/css/lib/splide.css"> -->
+    <link rel="stylesheet" href="/assets/css/contact.css">
+    <!-- JS -->
+    <!-- <script src="/assets/js/lib/splide.js" defer></script> -->
+    <!-- <script src="/assets/js/events.js" defer></script> -->
+</head>
+
+<body>
+    <%- include('../partials/navbar'); %>
+    <div id="scroller__body" class="h-[100svh] w-full overflow-y-auto overflow-x-hidden hide-scrollbar">
+        <section id="page1" class="bg-black-light pt-24 flex justify-center items-center">
+          <h1 class="text-white font-semibold" style="font-size: clamp(3.5rem,6vw + 1rem,5rem)">Contact Us</h1>
+        </section>
+        <section id="contact" class="relative mt-16 flex justify-evenly items-center flex-wrap gap-x-6 gap-y-16 w-11/12 mx-auto">
+          <%for (let index = 0; index < 8; index++) {%>
+            
+            <div class="card__wapper">
+              <div class="card">
+                <div class="card__img">
+                  <img src="/assets/images/people.png" alt="">
+                </div>
+                <div class="card__info">
+                  <h1>Pulkit Soni</h1>
+                  <p>President</p>
+                  <div class="card__info__2">
+                    <img src="/assets/images/svg/mail.svg" alt="">
+                    <a href="malto:abc@gmail.com">abc@gmail.com</a>
+                  </div>
+                  <div class="card__info__2 mt-1">
+                    <img src="/assets/images/svg/phone.svg" alt="">
+                    <a href="tel:+918739172191">+91 8739172191</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          <%}%>
+          
+        </section>
+        <%- include('../partials/footer'); %>
+    </div>
+</body>
+
+</html>

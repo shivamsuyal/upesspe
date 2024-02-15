@@ -12,6 +12,9 @@ mainRouter.get("/",(req,res)=>{
 mainRouter.get("/events",(req,res)=>{
     res.render("pages/events")
 })
+mainRouter.get("/contact",(req,res)=>{
+    res.render("pages/contact")
+})
 
 // mainRouter.get("/contact",(req,res)=>{
 //     res.render("pages/contact")

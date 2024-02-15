@@ -5,9 +5,11 @@
     <%- include('../partials/header'); %>
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/lib/splide.css">
+    <link rel="stylesheet" href="/assets/css/lib/flipdown.css">
     <link rel="stylesheet" href="/assets/css/home.css">
     <!-- JS -->
     <script src="/assets/js/lib/splide.js" defer></script>
+    <script src="/assets/js/lib/flipdown.js" defer></script>
     <script src="/assets/js/home.js" defer></script>
 </head>
 
@@ -26,9 +28,12 @@
                 </div>
                 <p class="font-semibold text-2xl text-center">OUR CHAPTER | OUR WORK | OUR LEGACY</p>
                 <div
-                    class="font-bold font-overpass flex gap-x-6 gap-y-3 flex-wrap justify-center items-center mt-2 mx-4">
-                    <a href="#" class="border px-4 py-2 rounded">UPES SPE Fest</a>
-                    <a href="#" class="px-4 py-2 rounded bg-white text-main-color-dark">Become A Member</a>
+                    class="font-bold font-overpass flex gap-y-4 flex-wrap justify-center items-center mt-2 mx-4">
+                    <div class="flex flex-col justify-center items-center gap-4">
+                      <div id="flipdown" class="flipdown"></div>
+                      <a href="#" class="border px-4 py-2 rounded ">Left for UPES SPE Fest</a>
+                    </div>
+                    <!-- <a href="#" class="px-4 py-2 rounded bg-white text-main-color-dark">Become A Member</a> -->
                 </div>
             </div>
         </section>
@@ -89,7 +94,7 @@
                       </ul>
                 </div>
               </section>
-              <a href="#" class="border border-black rounded font-overpass flex justify-center items-center px-4 py-2 w-fit gap-x-2 mx-auto mt-6">
+              <a href="/events" class="border border-black rounded font-overpass flex justify-center items-center px-4 py-2 w-fit gap-x-2 mx-auto mt-6">
                 Discover More
                 <img src="/assets/images/svg/arrow.svg" class="h-4 w-auto" alt="">                 
               </a>
