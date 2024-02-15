@@ -45,11 +45,14 @@ $image-size: 9rem;
             font-size: 1.8rem;
             line-height: 1.8rem;
             font-weight: 700;
+            text-align: center;
         }
         h2{
             font-size: 1.1rem;
             line-height: 1.1rem;
             color: lighten($color: $black-light, $amount: 30);
+            text-align: center;
+
         }
         &__2{
             margin-top: 0.7rem;

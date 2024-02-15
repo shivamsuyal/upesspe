@@ -16,10 +16,10 @@
 <body>
     <%- include('../partials/navbar'); %>
     <div id="scroller__body" class="h-[100svh] w-full overflow-y-auto overflow-x-hidden hide-scrollbar">
-        <section id="page1" class="relative h-[100svh] -z-10 flex items-center">
-            <img class="absolute inset-0 h-full w-full object-cover -z-10" src="/assets/images/mainBg.png">
+        <section id="page1" class="relative h-[100svh] flex items-center">
+            <img class="absolute inset-0 h-full w-full object-cover" src="/assets/images/mainBg.png">
             <div
-                class="w-full pt-[6.5rem] font-montserrat flex flex-col gap-y-9 justify-center items-center text-white">
+                class="w-full pt-[6.5rem] font-montserrat flex flex-col gap-y-9 justify-center items-center text-white z-20">
                 <div class="flex flex-col justify-center items-center gap-0">
                     <h1 class="font-bold"
                         style="font-size: clamp(3.5rem,10vw + 1rem,9rem);line-height: clamp(3.5rem,10vw + 1rem,9rem)">
@@ -31,7 +31,11 @@
                     class="font-bold font-overpass flex gap-y-4 flex-wrap justify-center items-center mt-2 mx-4">
                     <div class="flex flex-col justify-center items-center gap-4">
                       <div id="flipdown" class="flipdown"></div>
-                      <a href="#" class="border px-4 py-2 rounded ">Left for UPES SPE Fest</a>
+                      <!-- <div class="flex flex-col justify-center items-center ">
+                        <span>Left for</span>
+                        <a href="/fest" class="border px-4 py-2 rounded hover:text-black-light hover:bg-white cursor-pointer"> UPES SPE Fest</a>
+                      </div> -->
+                      <a href="/fest" class="border px-4 py-2 rounded hover:text-black-light hover:bg-white cursor-pointer"> Left For UPES SPE Fest</a>
                     </div>
                     <!-- <a href="#" class="px-4 py-2 rounded bg-white text-main-color-dark">Become A Member</a> -->
                 </div>
@@ -48,7 +52,17 @@
                 <h1 class="hidden text-5xl md-s:inline-block font-bold text-main-color-light">ABOUT US</h1>
                 <div class="text-[#092E6E] flex-1 px-4 flex items-center" style="line-height: 31px; word-spacing: 1px;">
                     <p>
-                      The Chapter is a non-profit, technical student organization seeking to promote the propagation of invaluable erudition concerning the Oil and Gas Industry. The Chapter conducts a plethora of events throughout the academic year. Each event seeks to provide a unique opportunity for budding future professionals to augment their caliber, thereby, staying true to our motto of “Enhancing Competence”. <br>At UPES, we extend the core values of SPE International to all the students of the concerned branches. SPE, for students, bridges the gap that exists between the Industry and Academia. Our work at UPES SPE Student Chapter is in line with the vision of SPE International which is to enable the global Oil and Gas E&P Industry to share technical knowledge needed to meet the world’s energy needs in a safe and environmentally responsible manner. <br>We at UPES SPE work to extend our limits at every step and achieve greater heights, whether it is industrial connect or student talent enhancement. We understand the simple fact that academics are necessary but not everything, thus we provide those extra opportunities for growth which will assist in each and every aspect. We believe that growth of a person is not limited to books, laptops etc. but believe that if someone is determined, sky is the limit!  Our toil has given extraordinary returns and we have received the Presidential Award for Outstanding Student Chapter for seven times in a row consecutively, and received the Gold Standard Award for three consecutive years prior to that, all the time aiming to Enhance Competence and prove that if dreams meet determination and hard work, the outcome is indeed majestic!  
+                      Established in 2009, the UPES SPE Student Chapter stands as a beacon of knowledge and collaboration for students passionate about the intricacies of the Oil and Gas industry. Over the years, the Chapter has flourished into a dynamic hub where driven individuals converge to explore, discuss, and innovate. Rooted in a culture of excellence and fueled by a relentless search of knowledge, our chapter has consistently set new standards, gathering prestigious accolades along the way.
+                      <br>
+                      The Chapter's commitment to excellence has been acknowledged through various esteemed awards over the years. The SPE Gold Standard Award, bestowed upon us for three consecutive years from 2011 to 2013, the Presidential Award for Outstanding Student Chapter, honoured for seven consecutive years from 2014 to 2020 and notably, the Student Chapter Excellence Award for 2021 and 2023. These awards exemplify our unwavering dedication to surpassing expectations, our consistent pursuit of excellence and reaffirms our position as a trailblazer within the SPE International community.
+                      <br>
+                      At the heart of our chapter lies a spirit of innovation and collaboration. We recognize the importance of staying ahead of industry trends and fostering an environment where ideas flourish. Each year, we organize a diverse array of events aimed towards providing an unparalleled learning experience to both mentors and participants alike. These initiatives provide growth and empower individuals to enhance their competence while embracing the complexities of the oil and gas realm.
+                      <br>
+                      As we reflect on our past achievements, we remain steadfast in our resolve to push boundaries and set new benchmarks for success. Guided by our core values of collaboration, innovation, and excellence, we embark on a journey towards even greater heights. With each passing year, we reaffirm our commitment to driving positive change and shaping the future of the oil and gas industry.
+                      <br>
+                      The UPES SPE Student Chapter stands as a testament to the power of passion, dedication, and collective effort. Through our unwavering pursuit of excellence, we have earned a reputation as pioneers within the SPE International community. As we continue inspire future generations, we remain committed to upholding our legacy of achievement and fostering enhanced competence in all who journey with us.
+
+
                     </p>
                 </div>
             </div>
@@ -58,30 +72,27 @@
                 <div class="splide__track">
                       <ul class="splide__list">
                           <li class="splide__slide">
-                            <img src="/assets/images/demo-1.png" alt="">
+                            <img src="/assets/images/oldEvent-1.jpeg" alt="">
                           </li>
                           <li class="splide__slide">
-                            <img src="/assets/images/demo-1.png" alt="">
+                            <img src="/assets/images/oldEvent-2.jpeg" alt="">
                           </li>
                           <li class="splide__slide">
-                            <img src="/assets/images/demo-1.png" alt="">
+                            <img src="/assets/images/oldEvent-3.jpeg" alt="">
                           </li>
                           <li class="splide__slide">
-                            <img src="/assets/images/demo-1.png" alt="">
+                            <img src="/assets/images/oldEvent-4.jpeg" alt="">
                           </li>
                           <li class="splide__slide">
-                            <img src="/assets/images/demo-1.png" alt="">
+                            <img src="/assets/images/oldEvent-5.jpeg" alt="">
                           </li>
                           <li class="splide__slide">
-                            <img src="/assets/images/demo-1.png" alt="">
-                          </li>
-                          <li class="splide__slide">
-                            <img src="/assets/images/demo-1.png" alt="">
+                            <img src="/assets/images/oldEvent-6.jpeg" alt="">
                           </li>
                       </ul>
                 </div>
               </section>
-              <a href="/events" class="border border-black rounded font-overpass flex justify-center items-center px-4 py-2 w-fit gap-x-2 mx-auto mt-6">
+              <a href="/events" class="border bg-white border-black rounded font-overpass flex justify-center items-center px-4 py-2 w-fit gap-x-2 mx-auto mt-6">
                 Discover More
                 <img src="/assets/images/svg/arrow.svg" class="h-4 w-auto" alt="">                 
               </a>
