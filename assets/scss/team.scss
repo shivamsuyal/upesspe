@@ -1,0 +1,69 @@
+@import "./color";
+
+$image-size: 9rem;
+.card{
+    // background-color: red;
+    box-shadow: 2px 3px 30px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    position: relative;
+    overflow: hidden;
+    min-width: 250px;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 8px;
+        width: 80%;
+        background-color: $main-color-light;
+        border-radius: 10px;
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            border-radius: 50%;
+            overflow: hidden;
+            height: $image-size;
+            width: $image-size;
+            object-fit: cover;
+        }
+    }
+    &__info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Overpass';
+        gap: 0.2rem;
+        margin-top: 0.5rem;
+        h1{
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+            font-weight: 700;
+        }
+        h2{
+            font-size: 1.1rem;
+            line-height: 1.1rem;
+            color: lighten($color: $black-light, $amount: 30);
+        }
+        &__2{
+            margin-top: 0.7rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            width: 100%;
+            a{
+                img{
+                    height: 2rem;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

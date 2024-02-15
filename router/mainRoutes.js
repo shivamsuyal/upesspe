@@ -15,10 +15,10 @@ mainRouter.get("/events",(req,res)=>{
 mainRouter.get("/contact",(req,res)=>{
     res.render("pages/contact")
 })
+mainRouter.get("/team",(req,res)=>{
+    res.render("pages/team")
+})
 
-// mainRouter.get("/contact",(req,res)=>{
-//     res.render("pages/contact")
-// })
 
 export default mainRouter
 
