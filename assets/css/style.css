@@ -1138,6 +1138,12 @@ video {
   opacity: 1;
 }
 
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
+}
+
 @media (min-width: 445px) {
   .sm-l\:flex-row {
     flex-direction: row;
