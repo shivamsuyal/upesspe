@@ -3,12 +3,16 @@
 $image-size: 9rem;
 .card{
     // background-color: red;
+    background-color: white;
     box-shadow: 2px 3px 30px rgba(0,0,0,0.1);
     border-radius: 5px;
     padding: 1rem 2rem;
     position: relative;
     overflow: hidden;
-    min-width: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     &::after{
         content: '';
         position: absolute;
