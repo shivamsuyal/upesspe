@@ -33,7 +33,10 @@ $card-border-color:black;
         }
         // font-family: 'Montserrat';
         .card__img{
-            
+            img{
+                height: 20rem;
+                width: auto;
+            }
         }
         .card__info{
             position: absolute;
@@ -72,10 +75,7 @@ $card-border-color:black;
     }
 }
 
-
-@media only screen and (max-width: 500px) {
-    .card__info{
-        opacity: 1 !important;
-        transform: translateY(0) !important;
-    }
-  }
+.card__info{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
