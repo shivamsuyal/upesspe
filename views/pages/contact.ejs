@@ -18,7 +18,6 @@
           <h1 class="text-white font-semibold" style="font-size: clamp(3.5rem,6vw + 1rem,5rem)">Contact Us</h1>
         </section>
         <section id="contact" class="relative mt-16 flex justify-evenly items-center flex-wrap gap-x-6 gap-y-16 w-11/12 mx-auto">
-          <%for (let index = 0; index < 8; index++) {%>
             
             <div class="card__wapper">
               <div class="card">
@@ -39,8 +38,27 @@
                 </div>
               </div>
             </div>
+
+            <div class="card__wapper">
+              <div class="card">
+                <div class="card__img">
+                  <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTOIN8p21gmJGCk1KUxxK0jWyigWgLllzJI6qCz7ONom7_uAz-ZNUAeKj2MAPKFjBsrYNh6U1OxiQDTq0xtohfb4nPWqQ=s1600" alt="">
+                </div>
+                <div class="card__info">
+                  <h1>Dr. Rohit Sharma</h1>
+                  <p>Co Faculty Advisor</p>
+                  <div class="card__info__2">
+                    <img src="/assets/images/svg/mail.svg" alt="">
+                    <a href="malto:rohitsharma@ddn.upes.ac.in">rohitsharma@ddn.upes.ac.in</a>
+                  </div>
+                  <!-- <div class="card__info__2 mt-1">
+                    <img src="/assets/images/svg/phone.svg" alt="">
+                    <a href="tel:+918739172191">+91 8739172191</a>
+                  </div> -->
+                </div>
+              </div>
+            </div>
             
-          <%}%>
           
         </section>
         <%- include('../partials/footer'); %>
