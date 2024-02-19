@@ -10,7 +10,7 @@ app.use("/assets",express.static("assets"))
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
-// app.use("/",mainRouter)
+app.use("/",mainRouter)
 
 app.listen(process.env.PORT || 4444,()=>{
     console.log("server started ...")
